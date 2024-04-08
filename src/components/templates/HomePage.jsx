@@ -11,7 +11,7 @@ const HomePage = () => {
   }, []);
   return (
     <div>
-      <TableCoin />
+      <TableCoin coins={coins}/>
     </div>
   );
 };
