@@ -8,8 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <App />
   //</React.StrictMode>,
 );
-                                                      const aboutMe = {
-                                                        iAm: "Front End Developer",
-                                                        iLove: ["Challenge", "Sport", "Game"],
-                                                        iWorkWith: ["React", "Js", "TaliwindCss"],
-                                                      };
