@@ -26,7 +26,16 @@ const TableCoin = ({ coins }) => {
 
 export default TableCoin;
 
-const TableRow = ({coin}) => {
+const TableRow = ({
+  coin: {
+    name,
+    image,
+    current_price,
+    price_change_percentage_24h: price_change,
+    total_volume,
+    symbol,
+  },
+}) => {
   return (
     <tr>
       <td>
