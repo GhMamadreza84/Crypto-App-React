@@ -22,6 +22,9 @@ const TableCoin = ({ coins }) => {
                   <span>{coin.symbol.toUpperCase()}</span>
                 </div>
               </td>
+              <td>{coin.name}</td>
+              <td>${coin.current_price.toLocaleString()}</td>
+              <td>{coin.name}</td>
             </tr>
           ))}
         </tbody>
