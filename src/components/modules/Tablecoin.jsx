@@ -15,9 +15,8 @@ const TableCoin = ({ coins }) => {
           </tr>
         </thead>
         <tbody>
-          {coins.map((coin) => (
-            <TableRow coin={coin} key={coin.id} />
-          ))}
+          {/* {coins.map((coin) => (
+          ))} */}
         </tbody>
       </table>
     </div>
@@ -25,3 +24,16 @@ const TableCoin = ({ coins }) => {
 };
 
 export default TableCoin;
+
+const TableRow = () => {
+  return (
+    <tr>
+      <td>
+        <div>
+          <img src={coin.image} alt={coin.name} />
+          <span>{coin.symbol.toUpperCase()}</span>
+        </div>
+      </td>
+    </tr>
+  );
+};
