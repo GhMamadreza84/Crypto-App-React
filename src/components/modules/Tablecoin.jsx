@@ -1,3 +1,5 @@
+import { RotatingLines } from "react-loader-spinner";
+
 import chartUp from "../../assets/chart-up.svg";
 import chartDown from "../../assets/chart-down.svg";
 const TableCoin = ({ coins, isLoading }) => {
