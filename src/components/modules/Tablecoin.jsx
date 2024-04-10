@@ -1,4 +1,4 @@
-
+import chartUp from "../../assets/chart-up.svg"
 const TableCoin = ({ coins }) => {
   console.log(coins);
   return (
