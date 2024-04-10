@@ -1,3 +1,4 @@
+
 const TableCoin = ({ coins }) => {
   console.log(coins);
   return (
@@ -25,6 +26,7 @@ const TableCoin = ({ coins }) => {
               <td>{coin.name}</td>
               <td>${coin.current_price.toLocaleString()}</td>
               <td>{coin.price_change_percentage_24h.toFixed(2)}</td>
+              <td>{coin.total_volume.toLocaleString()}</td>
             </tr>
           ))}
         </tbody>
