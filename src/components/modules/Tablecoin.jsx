@@ -6,7 +6,7 @@ const TableCoin = ({ coins, isLoading }) => {
   return (
     <div>
       {isLoading ? (
-        <RotatingLines />
+        <RotatingLines strokeColor="#3874ff" strokeWidth="2" />
       ) : (
         <table>
           <thead>
