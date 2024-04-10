@@ -3,6 +3,7 @@ import TableCoin from "../modules/TableCoin";
 import { getCoinList } from "../../services/cryptoApi";
 const HomePage = () => {
   const [coins, setCoins] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const getData = async () => {
       const res = await fetch(getCoinList());
