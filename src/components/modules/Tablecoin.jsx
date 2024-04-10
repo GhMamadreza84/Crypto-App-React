@@ -26,7 +26,7 @@ const TableCoin = ({ coins }) => {
 
 export default TableCoin;
 
-const TableRow = () => {
+const TableRow = ({coin}) => {
   return (
     <tr>
       <td>
