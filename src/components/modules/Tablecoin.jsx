@@ -1,5 +1,5 @@
-import chartUp from "../../assets/chart-up.svg"
-import chartDown from "../../assets/chart-down.svg"
+import chartUp from "../../assets/chart-up.svg";
+import chartDown from "../../assets/chart-down.svg";
 const TableCoin = ({ coins }) => {
   console.log(coins);
   return (
@@ -20,7 +20,7 @@ const TableCoin = ({ coins }) => {
             <tr key={coin.id}>
               <td>
                 <div>
-                  <img src={coin.image} alt="" />
+                  <img src={coin.image} alt={coin.name} />
                   <span>{coin.symbol.toUpperCase()}</span>
                 </div>
               </td>
@@ -28,6 +28,9 @@ const TableCoin = ({ coins }) => {
               <td>${coin.current_price.toLocaleString()}</td>
               <td>{coin.price_change_percentage_24h.toFixed(2)}</td>
               <td>{coin.total_volume.toLocaleString()}</td>
+              <td>
+                <img src={coin.price_change_percentage_24h > 0 ? chartUp : chartDown} alt={coin.name} />
+              </td>
             </tr>
           ))}
         </tbody>
