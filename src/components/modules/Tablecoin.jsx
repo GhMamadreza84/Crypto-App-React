@@ -24,7 +24,7 @@ const TableCoin = ({ coins }) => {
               </td>
               <td>{coin.name}</td>
               <td>${coin.current_price.toLocaleString()}</td>
-              <td>{coin.name}</td>
+              <td>{coin.price_change_percentage_24h.toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
