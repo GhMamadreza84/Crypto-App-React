@@ -9,12 +9,13 @@ const HomePage = () => {
       const res = await fetch(getCoinList());
       const data = await res.json();
       setCoins(data);
+      setIsLoading(false);
     };
     getData();
   }, []);
   return (
     <div>
-      <TableCoin coins={coins} />
+      <TableCoin coins={coins} isLoading={isLoading} />
     </div>
   );
 };
