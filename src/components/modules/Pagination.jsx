@@ -1,6 +1,6 @@
 import { useState } from "react";
-
-const Pagination = ({page,setPage}) => {
+import styles from "./pagination.module.css";
+const Pagination = ({ page, setPage }) => {
   const previousHandler = () => {
     if (page <= 1) return;
     setPage((page) => page - 1);
@@ -10,20 +10,25 @@ const Pagination = ({page,setPage}) => {
     setPage((page) => page + 1);
   };
   return (
-    <div>
-      <button onClick={previousHandler}>Previous</button>
-      <p >1</p>
-      <p >2</p>
+    <div className={styles.pagination}>
+      <button
+        onClick={previousHandler}
+        className={page === 1 ? styles.disabled : null}
+      >
+        Previous
+      </button>
+      <p>1</p>
+      <p>2</p>
       {page > 2 && page < 9 && (
         <>
           <span>...</span>
-          <p >{page}</p>
+          <p>{page}</p>
         </>
       )}
       <span>...</span>
       <p>9</p>
       <p>10</p>
-      <button onClick={nextHandler}>Next</button>
+      <button onClick={nextHandler} className={page === 10 ? styles.disabled : null}>Next</button>
     </div>
   );
 };
