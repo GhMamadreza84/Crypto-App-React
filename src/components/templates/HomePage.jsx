@@ -17,7 +17,7 @@ const HomePage = () => {
   }, []);
   return (
     <div>
-      <Pagination />
+      <Pagination page={page} setPage={setPage} />
       <TableCoin coins={coins} isLoading={isLoading} />
     </div>
   );
