@@ -3,7 +3,7 @@ import { RotatingLines } from "react-loader-spinner";
 import chartUp from "../../assets/chart-up.svg";
 import chartDown from "../../assets/chart-down.svg";
 import styles from "./TableCoin.module.css";
-const TableCoin = ({ coins, isLoading }) => {
+const TableCoin = ({ coins, isLoading, currency }) => {
   return (
     <div className={styles.container}>
       {isLoading ? (
@@ -22,7 +22,7 @@ const TableCoin = ({ coins, isLoading }) => {
           </thead>
           <tbody>
             {coins.map((coin) => (
-              <TableRow coin={coin} key={coin.id} />
+              <TableRow coin={coin} key={coin.id} currency={currency} />
             ))}
           </tbody>
         </table>
@@ -42,6 +42,7 @@ const TableRow = ({
     total_volume,
     symbol,
   },
+  currency,
 }) => {
   return (
     <tr>
@@ -52,7 +53,12 @@ const TableRow = ({
         </div>
       </td>
       <td>{name}</td>
-      <td>${current_price.toLocaleString()}</td>
+      <td>
+        {currency === "usd" ? "$" : null}
+        {currency === "jpy" ? "¥" : null}
+        {currency === "eur" ? "€" : null}
+        {current_price.toLocaleString()}
+      </td>
       <td className={price_change > 0 ? styles.success : styles.error}>
         {price_change.toFixed(2)}%
       </td>
