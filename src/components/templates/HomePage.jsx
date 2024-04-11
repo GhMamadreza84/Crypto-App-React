@@ -8,6 +8,7 @@ const HomePage = () => {
   const [page, setPage] = useState(1);
   useEffect(() => {
     const getData = async () => {
+      setIsLoading(true)
       const res = await fetch(getCoinList(page));
       const data = await res.json();
       setCoins(data);
