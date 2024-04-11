@@ -22,7 +22,7 @@ const Pagination = ({ page, setPage }) => {
       {page > 2 && page < 9 && (
         <>
           <span>...</span>
-          <p className={page===page?styles.selected:null}>{page}</p>
+          <p className={styles.selected}>{page}</p>
         </>
       )}
       <span>...</span>
