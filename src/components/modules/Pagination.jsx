@@ -17,17 +17,17 @@ const Pagination = ({ page, setPage }) => {
       >
         Prev
       </button>
-      <p>1</p>
-      <p>2</p>
+      <p className={page===1?styles.selected:null}>1</p>
+      <p className={page===2?styles.selected:null}>2</p>
       {page > 2 && page < 9 && (
         <>
           <span>...</span>
-          <p>{page}</p>
+          <p className={page===page?styles.selected:null}>{page}</p>
         </>
       )}
       <span>...</span>
-      <p>9</p>
-      <p>10</p>
+      <p className={page===9?styles.selected:null}>9</p>
+      <p className={page===10?styles.selected:null}>10</p>
       <button onClick={nextHandler} className={page === 10 ? styles.disabled : null}>Next</button>
     </div>
   );
