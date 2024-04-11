@@ -14,7 +14,7 @@ const HomePage = () => {
       setIsLoading(false);
     };
     getData();
-  }, []);
+  }, [page]);
   return (
     <div>
       <Pagination page={page} setPage={setPage} />
