@@ -18,7 +18,7 @@ const Pagination = () => {
       {page > 2 && page < 9 && (
         <>
           <span>...</span>
-          <p>{page}</p>
+          <p >{page}</p>
         </>
       )}
       <span>...</span>
