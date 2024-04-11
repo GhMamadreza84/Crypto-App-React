@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./pagination.module.css";
+import styles from "./Pagination.module.css";
 const Pagination = ({ page, setPage }) => {
   const previousHandler = () => {
     if (page <= 1) return;
