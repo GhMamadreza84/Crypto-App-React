@@ -8,8 +8,8 @@ const HomePage = () => {
   const [page, setPage] = useState(1);
   useEffect(() => {
     const getData = async () => {
-      setIsLoading(true)
       const res = await fetch(getCoinList(page));
+      setIsLoading(true)
       const data = await res.json();
       setCoins(data);
       setIsLoading(false);
@@ -18,8 +18,8 @@ const HomePage = () => {
   }, [page]);
   return (
     <div>
-      <Pagination page={page} setPage={setPage} />
       <TableCoin coins={coins} isLoading={isLoading}  />
+      <Pagination page={page} setPage={setPage} />
     </div>
   );
 };
