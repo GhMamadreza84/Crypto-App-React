@@ -1,9 +1,12 @@
-import React from "react"
+import {useState} from "react"
 
 const Pagination = () => {
+  const [page,setPage]=useState(1)
   return (
     <div>
-      Pagination
+      <button>Previous</button>
+      <p></p>
+      <button>Previous</button>
     </div>
   )
 };
