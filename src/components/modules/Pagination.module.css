@@ -13,8 +13,11 @@
   color: #fff;
   border: none;
   padding: 5px 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
+  font-weight: 600;
+  border-radius: 7px;
+
 }
 
 .pagination p {
@@ -26,4 +29,8 @@
 
 .disabled{
   opacity: 0.3;
+}
+
+.selected {
+  background-color: #3874ff;
 }

@@ -15,7 +15,7 @@ const Pagination = ({ page, setPage }) => {
         onClick={previousHandler}
         className={page === 1 ? styles.disabled : null}
       >
-        Previous
+        Prev
       </button>
       <p>1</p>
       <p>2</p>
