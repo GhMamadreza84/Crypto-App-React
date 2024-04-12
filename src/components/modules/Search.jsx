@@ -1,4 +1,6 @@
+import {useState} from "react"
 const Search = ({ currency, setCurrency }) => {
+  
   return (
     <div>
       <input type="text" />
