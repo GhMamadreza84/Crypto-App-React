@@ -3,15 +3,22 @@ import { searchCoin } from "../../services/cryptoApi";
 const Search = ({ currency, setCurrency }) => {
   const [text, setText] = useState("");
   const [coins, setCoins] = useState([]);
+
   useEffect(() => {
+    const controller = new AbortController();
     if (!text) return;
     const search = async () => {
-      const res = await fetch(searchCoin(text));
+      const res = await fetch(searchCoin(text), { signal: controller.signal });
       const json = await res.json();
       if (json.coins) setCoins(json);
     };
     search();
+    
+    return () => {
+      controller.abort();
+    };
   }, [text]);
+
   return (
     <div>
       <input
