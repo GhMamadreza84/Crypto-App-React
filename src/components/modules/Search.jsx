@@ -8,12 +8,18 @@ const Search = ({ currency, setCurrency }) => {
     const controller = new AbortController();
     if (!text) return;
     const search = async () => {
-      const res = await fetch(searchCoin(text), { signal: controller.signal });
-      const json = await res.json();
-      if (json.coins) setCoins(json);
+      try {
+        const res = await fetch(searchCoin(text), {
+          signal: controller.signal,
+        });
+        const json = await res.json();
+        if (json.coins) setCoins(json);
+      } catch (error) {
+        if (error.message !== "AbortError") alert(error.message);
+      }
     };
     search();
-    
+
     return () => {
       controller.abort();
     };
