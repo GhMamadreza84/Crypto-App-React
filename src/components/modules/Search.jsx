@@ -13,9 +13,13 @@ const Search = ({ currency, setCurrency }) => {
           signal: controller.signal,
         });
         const json = await res.json();
-        if (json.coins) setCoins(json);
+        if (json.coins) {
+          setCoins(json);
+        } else {
+          alert(json.status.error_message);
+        }
       } catch (error) {
-        if (error.message !== "AbortError") alert(error.message);
+        if (error.name !== "AbortError") alert(error.message);
       }
     };
     search();
