@@ -1,6 +1,7 @@
 .searchBox {
   margin-top: 50px;
   position: relative;
+  scrollbar-width: none;
 }
 
 .searchBox input {
@@ -42,11 +43,6 @@
   background-color: #18181c;
   border: 2px solid #22262e;
   padding: 20px;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  background: transparent;
 }
 
 .searchResult li{
