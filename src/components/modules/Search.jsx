@@ -15,9 +15,7 @@ const Search = ({ currency, setCurrency }) => {
         const json = await res.json();
         if (json.coins) {
           setCoins(json.coins);
-        } else {
-          alert(json.status.error_message);
-        }
+        } 
       } catch (error) {
         if (error.name !== "AbortError") alert(error.message);
       }

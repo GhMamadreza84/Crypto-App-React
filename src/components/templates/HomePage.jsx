@@ -10,14 +10,18 @@ const HomePage = () => {
   const [currency, setCurrency] = useState("usd");
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch(getCoinList(page, currency));
-      setIsLoading(true);
-      const data = await res.json();
-      setCoins(data);
-      setIsLoading(false);
+      try {
+        const res = await fetch(getCoinList(page, currency));
+        setIsLoading(true);
+        const data = await res.json();
+        setCoins(data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
     };
     getData();
-  }, [page,currency]);
+  }, [page, currency]);
   return (
     <div>
       <Search currency={currency} setCurrency={setCurrency} />
