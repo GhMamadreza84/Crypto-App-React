@@ -14,7 +14,7 @@ const Search = ({ currency, setCurrency }) => {
         });
         const json = await res.json();
         if (json.coins) {
-          setCoins(json);
+          setCoins(json.coins);
         } else {
           alert(json.status.error_message);
         }
