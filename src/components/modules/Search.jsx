@@ -3,6 +3,7 @@ import { searchCoin } from "../../services/cryptoApi";
 const Search = ({ currency, setCurrency }) => {
   const [text, setText] = useState("");
   const [coins, setCoins] = useState([]);
+  const [isLoading, setIsLoading] = useState([]);
 
   useEffect(() => {
     const controller = new AbortController();
