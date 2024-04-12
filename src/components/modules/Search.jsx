@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import { searchCoin } from "../../services/cryptoApi";
 const Search = ({ currency, setCurrency }) => {
   const [text, setText] = useState("");
-  useEffect(()=>{
-    const search = async ()=>{
-      const res = await fetch(searchCoin(text))
+  const [coins,setCoins]=useState([])
+  useEffect(() => {
+    if (!text) return;
+    const search = async () => {
+      const res = await fetch(searchCoin(text));
       const json = await res.json();
       console.log(json);
-    }
-    search()
-  },[text])
+    };
+    search();
+  }, [text]);
   return (
     <div>
       <input
