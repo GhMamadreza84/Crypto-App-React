@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 const Search = ({ currency, setCurrency }) => {
   const [text, setText] = useState("");
   useEffect(()=>{
-    console.log(text);
   },[text])
   return (
     <div>
