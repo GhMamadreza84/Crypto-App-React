@@ -49,7 +49,7 @@ const Search = ({ currency, setCurrency }) => {
         <option value="eur">EUR</option>
         <option value="jpy">JPY</option>
       </select>
-      {!!coins.length && (
+      {(!!coins.length || isLoading )&& (
         <div className={styles.searchResult}>
           {isLoading && (
             <RotatingLines
