@@ -2,7 +2,7 @@ import styles from "./Chart.module.css"
 const Chart = () => {
   return (
     <div className={styles.container}>
-      Chart
+     <span >X</span>
     </div>
   );
 }
