@@ -31,7 +31,7 @@ const HomePage = () => {
       <Search currency={currency} setCurrency={setCurrency} />
       <TableCoin coins={coins} isLoading={isLoading} currency={currency} />
       <Pagination page={page} setPage={setPage} />
-      <Chart />
+      {!!chart && <Chart />}
     </div>
   );
 };
