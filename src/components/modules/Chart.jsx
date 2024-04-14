@@ -1,8 +1,8 @@
 import styles from "./Chart.module.css"
-const Chart = () => {
+const Chart = ({chart,setChart}) => {
   return (
     <div className={styles.container}>
-     <span >X</span>
+     <span onClick={()=>setChart(null)} className={styles.cross}>X</span>
     </div>
   );
 }
