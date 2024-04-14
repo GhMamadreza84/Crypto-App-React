@@ -1,4 +1,4 @@
-
+import styles from "./Chart.module.css"
 const Chart = () => {
   return (
     <div>
