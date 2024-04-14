@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div>
       <Search currency={currency} setCurrency={setCurrency} />
-      <TableCoin coins={coins} isLoading={isLoading} currency={currency} />
+      <TableCoin coins={coins} isLoading={isLoading} currency={currency} setChart={setChart}/>
       <Pagination page={page} setPage={setPage} />
       {!!chart && <Chart />}
     </div>
