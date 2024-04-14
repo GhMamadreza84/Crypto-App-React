@@ -10,6 +10,8 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [currency, setCurrency] = useState("usd");
+  const [chart, setChart] = useState("usd");
+
   useEffect(() => {
     const getData = async () => {
       try {
