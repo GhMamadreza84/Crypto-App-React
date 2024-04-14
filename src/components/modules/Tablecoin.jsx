@@ -40,6 +40,7 @@ export default TableCoin;
 
 const TableRow = ({
   coin: {
+    id,
     name,
     image,
     current_price,
