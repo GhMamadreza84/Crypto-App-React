@@ -22,14 +22,16 @@ const Chart = ({ chart, setChart }) => {
         <IoClose />
       </span>
       <div className={styles.chart}>
-        <div className={styles.graph}></div>
+        <div className={styles.graph}>
+          <chartComponent  type={type} chart={chart} />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Chart;
-const chartComponent = ({data,type,chart}) => {
+const chartComponent = ({data,type}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart width={400} height={400} data={convertData(chart, type)}>
