@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, XAxis, YAxis} from "recharts"
+import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts"
 
 import { convertData } from "../../helpers/convertData";
 import { IoClose } from "react-icons/io5";
@@ -22,6 +22,7 @@ const Chart = ({ chart, setChart }) => {
             <YAxis dataKey={type} domain={['auto','auto']} />
             <XAxis dataKey="date" hide  />
             <Legend />
+            <Tooltip />
           </LineChart>
         </ResponsiveContainer>
         </div>
