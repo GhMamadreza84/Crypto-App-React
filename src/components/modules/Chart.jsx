@@ -23,7 +23,7 @@ const Chart = ({ chart, setChart }) => {
       </span>
       <div className={styles.chart}>
         <div className={styles.graph}>
-          <chartComponent  type={type} chart={chart} />
+          <ChartComponent  type={type} data={convertData(chart, type)} />
         </div>
       </div>
     </div>
@@ -31,10 +31,10 @@ const Chart = ({ chart, setChart }) => {
 };
 
 export default Chart;
-const chartComponent = ({data,type}) => {
+const ChartComponent = ({data,type}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <LineChart width={400} height={400} data={convertData(chart, type)}>
+      <LineChart width={400} height={400} data={data}>
         <Line type="monotone" dataKey={type} stroke="#3874ff" strokeWidth="2" />
         <CartesianGrid stroke="#404042" />
         <YAxis dataKey={type} domain={["auto", "auto"]} />
