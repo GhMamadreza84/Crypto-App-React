@@ -22,6 +22,9 @@ const Chart = ({ chart, setChart }) => {
         <IoClose />
       </span>
       <div className={styles.chart}>
+        <div className={styles.name}>
+          <img src={chart.coin.image} alt={chart.coin.name} />
+          <p>{chart.coin.name}</p> </div>
         <div className={styles.graph}>
           <ChartComponent  type={type} data={convertData(chart, type)} />
         </div>
