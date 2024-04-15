@@ -1,5 +1,14 @@
 import { useState } from "react";
-import {CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts"
+import {
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 import { convertData } from "../../helpers/convertData";
 import { IoClose } from "react-icons/io5";
@@ -13,22 +22,24 @@ const Chart = ({ chart, setChart }) => {
         <IoClose />
       </span>
       <div className={styles.chart}>
-        <div className={styles.graph}>
-
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart width={400} height={400} data={convertData(chart,type)}>
-            <Line type="monotone" dataKey={type} stroke="#3874ff" strokeWidth="2" />
-            <CartesianGrid stroke="#404042" />
-            <YAxis dataKey={type} domain={['auto','auto']} />
-            <XAxis dataKey="date" hide  />
-            <Legend />
-            <Tooltip />
-          </LineChart>
-        </ResponsiveContainer>
-        </div>
+        <div className={styles.graph}></div>
       </div>
     </div>
   );
 };
 
 export default Chart;
+const chartComponent = ({data,type}) => {
+  return (
+    <ResponsiveContainer width="100%" height="100%">
+      <LineChart width={400} height={400} data={convertData(chart, type)}>
+        <Line type="monotone" dataKey={type} stroke="#3874ff" strokeWidth="2" />
+        <CartesianGrid stroke="#404042" />
+        <YAxis dataKey={type} domain={["auto", "auto"]} />
+        <XAxis dataKey="date" hide />
+        <Legend />
+        <Tooltip />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+};
