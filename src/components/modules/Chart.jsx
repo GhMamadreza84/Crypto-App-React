@@ -24,9 +24,15 @@ const Chart = ({ chart, setChart }) => {
       <div className={styles.chart}>
         <div className={styles.name}>
           <img src={chart.coin.image} alt={chart.coin.name} />
-          <p>{chart.coin.name}</p> </div>
+          <p>{chart.coin.name}</p>{" "}
+        </div>
         <div className={styles.graph}>
-          <ChartComponent  type={type} data={convertData(chart, type)} />
+          <ChartComponent type={type} data={convertData(chart, type)} />
+        </div>
+        <div className="types">
+          <button>Prices</button>
+          <button>Market Caps</button>
+          <button>Total Volumes</button>
         </div>
       </div>
     </div>
@@ -34,7 +40,7 @@ const Chart = ({ chart, setChart }) => {
 };
 
 export default Chart;
-const ChartComponent = ({data,type}) => {
+const ChartComponent = ({ data, type }) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart width={400} height={400} data={data}>
