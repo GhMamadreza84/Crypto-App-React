@@ -29,7 +29,7 @@ const Chart = ({ chart, setChart }) => {
 };
 
 export default Chart;
-const chartComponent = ({data,type}) => {
+const chartComponent = ({data,type,chart}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart width={400} height={400} data={convertData(chart, type)}>
