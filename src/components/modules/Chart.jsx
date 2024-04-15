@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {CartesianGrid, Line, LineChart, ResponsiveContainer} from "recharts"
+import {CartesianGrid, Line, LineChart, ResponsiveContainer, YAxis} from "recharts"
 
 import { convertData } from "../../helpers/convertData";
 import { IoClose } from "react-icons/io5";
@@ -19,6 +19,7 @@ const Chart = ({ chart, setChart }) => {
           <LineChart width={400} height={400} data={convertData(chart,type)}>
             <CartesianGrid stroke="#404042" />
             <Line type="monotone" dataKey={type} stroke="3874ff" strokeWidth="2" />
+            <YAxis />
           </LineChart>
         </ResponsiveContainer>
         </div>
