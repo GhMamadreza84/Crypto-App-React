@@ -15,7 +15,11 @@ import { IoClose } from "react-icons/io5";
 import styles from "./Chart.module.css";
 const Chart = ({ chart, setChart }) => {
   const [type, setType] = useState("prices");
-  console.log(convertData(chart, type));
+  const typeHandler = (event) => {
+    const type = event.target.innerText.toLowerCase().replace(" ", "_");
+    // console.log(type);
+    setType(type);
+  };
   return (
     <div className={styles.container}>
       <span onClick={() => setChart(null)} className={styles.cross}>
@@ -29,12 +33,12 @@ const Chart = ({ chart, setChart }) => {
         <div className={styles.graph}>
           <ChartComponent type={type} data={convertData(chart, type)} />
         </div>
-        <div className="types">
-          <button>Prices</button>
-          <button>Market Caps</button>
-          <button>Total Volumes</button>
+        <div className={styles.types} onClick={typeHandler}>
+          <button className={type==="prices" ? styles.selected : null}>Prices</button>
+          <button className={type==="market_caps" ? styles.selected : null}>Market Caps</button>
+          <button className={type==="total_volumes" ? styles.selected : null}>Total Volumes</button>
         </div>
-        <div className="details">
+        <div className={styles.details}>
           <div>
             <p>Prices:</p>
             <span>${chart.coin.current_price}</span>
