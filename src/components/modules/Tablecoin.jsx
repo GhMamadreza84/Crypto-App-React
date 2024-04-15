@@ -44,16 +44,17 @@ const TableRow = ({
   currency,
   setChart,
 }) => {
+  const  {
+    id,
+    name,
+    image,
+    current_price,
+    price_change_percentage_24h: price_change,
+    total_volume,
+    symbol,
+  } = coin;
   const showHandler = async() => {
-    const  {
-      id,
-      name,
-      image,
-      current_price,
-      price_change_percentage_24h: price_change,
-      total_volume,
-      symbol,
-    } = coin;
+    
     try{
       const res = await fetch(marketChart(id))
       const data = await res.json()
