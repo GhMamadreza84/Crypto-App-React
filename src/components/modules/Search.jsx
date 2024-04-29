@@ -35,7 +35,16 @@ const Search = ({ currency, setCurrency }) => {
       controller.abort();
     };
   }, [text]);
-
+  const showHandler = async (coin) => {
+    try {
+      const res = await fetch(marketChart(id));
+      const data = await res.json();
+      console.log(data);
+      setChart({ ...data, coin });
+    } catch (error) {
+      setChart(null);
+    }
+  };
   return (
     <div className={styles.searchBox}>
       <input
@@ -49,7 +58,7 @@ const Search = ({ currency, setCurrency }) => {
         <option value="eur">EUR</option>
         <option value="jpy">JPY</option>
       </select>
-      {(!!coins.length || isLoading )&& (
+      {(!!coins.length || isLoading) && (
         <div className={styles.searchResult}>
           {isLoading && (
             <RotatingLines
