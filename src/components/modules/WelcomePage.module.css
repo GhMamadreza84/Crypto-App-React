@@ -1,0 +1,34 @@
+.container{
+  min-height: 44rem;
+}
+.title{
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title h1{
+  font-size: 5.5rem;
+  margin-top: 8rem;
+
+}
+.title p{
+  margin-top: 1.5rem;
+  color: #898CA9 ;
+}
+.title button{
+  margin-top: 8rem;
+  background: rgb(24, 200, 255);
+  background: linear-gradient(
+    197deg,
+    rgba(24, 200, 255, 1) 13%,
+    rgba(147, 63, 254, 1) 64%
+  );
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

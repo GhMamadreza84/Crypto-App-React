@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getCoinList } from "../../services/cryptoApi";
 
+import styles from "./ChartPage.module.css"
 import TableCoin from "../modules/TableCoin";
 import Pagination from "../modules/Pagination";
 import Search from "../modules/Search";
@@ -27,7 +28,7 @@ const HomePage = () => {
     getData();
   }, [page, currency]);
   return (
-    <div>
+    <div className={styles.container}>
       <Search currency={currency} setCurrency={setCurrency} />
       <TableCoin coins={coins} isLoading={isLoading} currency={currency} setChart={setChart}/>
       <Pagination page={page} setPage={setPage} />

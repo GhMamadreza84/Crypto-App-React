@@ -1,4 +1,4 @@
-import HomePage from "./components/templates/ChartPage";
+import HomePage from "./components/templates/HomePage";
 import ChartPage from "./components/templates/ChartPage";
 
 function App() {

@@ -4,9 +4,9 @@
   scrollbar-width: none;
 }
 body{
-  margin: auto;
+  /* margin: auto;
   max-width: 1200px;
-  min-height: 100vh;
+  min-height: 100vh; */
   padding: 10px;
   background-color: #0B0B0F;
   color: #fff;

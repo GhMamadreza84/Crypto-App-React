@@ -1,0 +1,50 @@
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5rem;
+}
+.logo {
+  cursor: pointer;
+}
+.menu {
+  width: 23rem;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.list li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.login {
+  background-color: #0b0b0f;
+  width: 6rem;
+  height: 2.5rem;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.signup {
+  background: rgb(24, 200, 255);
+  background: linear-gradient(
+    197deg,
+    rgba(24, 200, 255, 1) 13%,
+    rgba(147, 63, 254, 1) 64%
+  );
+  width: 6rem;
+  height: 2.5rem;
+  border:none;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
