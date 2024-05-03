@@ -1,7 +1,7 @@
 import styles from "./HomePage.module.css"
 
 import Header from "../modules/Header";
-import WelcomePage from "../modules/WelcomePage";
+import WelcomePage from "./WelcomePage";
 
 // Image 
 import greenGradient from "../../assets/green-gradient.png"
