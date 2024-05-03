@@ -7,7 +7,27 @@
   background-position: top 0% left 0%; */
 }
 .containerDiv {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.containerDiv div{
+  width: 24rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1A1B23;
+  border-radius: 25px;
+  gap: 1.5rem;
+}
+.title{
+  width: 15rem;
+  text-align: center;
+}
+.title p{
+  color: #898CA9!important;
 }
