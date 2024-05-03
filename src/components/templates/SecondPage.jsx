@@ -13,36 +13,36 @@ const SecondPage = () => {
       <div className={styles.containerDiv}>
         <div>
           <img src={tradeImage} alt="tradeImage" />
-          <div className={styles.title}>
+          <section className={styles.title}>
             <h2>Trade Desk</h2>
             <p>
               Invest in crypto anytime, anywhere with our safe, secure, and easy
               to use online platform
             </p>
             <a href="#">Get Started <FaArrowRight /></a>
-          </div>
+          </section>
         </div>
         <div>
           <img src={atmImage} alt="atmImage" />
-          <div className={styles.title}>
+          <section className={styles.title}>
             <h2>CoinFlip ATMs</h2>
             <p>
               We have thousands of ATMs located across the U.S. where you can
               easily convert cash to crypto
             </p>
             <a href="#">Find an ATM <FaArrowRight /></a>
-          </div>
+          </section>
         </div>
         <div>
           <img src={walletImage} alt="walletImage" />
-          <div className={styles.title}>
+          <section className={styles.title}>
             <h2>CoinFlip Wallet</h2>
             <p>
               Store your growing investments in our non-custodial wallet that
               gives you access to a full suite of DeFi services in one place
             </p>
             <a href="#">Download the App <FaArrowRight /> </a>
-          </div>
+          </section>
         </div>
       </div>
       <img src={star1} alt="star1" />
