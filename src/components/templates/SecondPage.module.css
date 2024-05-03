@@ -33,6 +33,10 @@
 .title {
   width: 20rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title p {
   color: #898ca9 !important;
