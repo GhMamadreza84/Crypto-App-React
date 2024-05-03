@@ -19,7 +19,7 @@ const SecondPage = () => {
               Invest in crypto anytime, anywhere with our safe, secure, and easy
               to use online platform
             </p>
-            <a href="#">Get Started</a>
+            <a href="#">Get Started <FaArrowRight /></a>
           </div>
         </div>
         <div>
@@ -30,7 +30,7 @@ const SecondPage = () => {
               We have thousands of ATMs located across the U.S. where you can
               easily convert cash to crypto
             </p>
-            <a href="#">Find an ATM</a>
+            <a href="#">Find an ATM <FaArrowRight /></a>
           </div>
         </div>
         <div>
@@ -41,7 +41,7 @@ const SecondPage = () => {
               Store your growing investments in our non-custodial wallet that
               gives you access to a full suite of DeFi services in one place
             </p>
-            <a href="#">Download the App</a>
+            <a href="#">Download the App <FaArrowRight /></a>
           </div>
         </div>
       </div>
