@@ -7,8 +7,8 @@ import star2 from "../../assets/star-img3.png";
 
 const SecondPage = () => {
   return (
-    <div>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.containerDiv}>
         <div>
           <img src={tradeImage} alt="tradeImage" />
           <h2>Trade Desk</h2>
