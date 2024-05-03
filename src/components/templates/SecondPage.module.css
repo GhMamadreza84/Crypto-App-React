@@ -13,25 +13,33 @@
   justify-content: center;
   align-items: center;
 }
-.containerDiv div{
+.containerDiv div {
   width: 24rem;
   height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #1A1B23;
+  background-color: #1a1b23;
   border-radius: 25px;
   padding: 2rem 0px;
 }
-.title{
+.containerDiv div:nth-child(1){
+  margin-right: 1.25rem;
+}
+.containerDiv div:nth-child(2){
+  margin-right: 1.25rem;
+}
+.title {
   width: 15rem;
   text-align: center;
 }
-.title p{
-  color: #898CA9!important;
+.title p {
+  color: #898ca9 !important;
+  margin-top: 1.5rem;
 }
-.title a{
+.title a {
   display: flex;
-  align-items: center; 
+  align-items: center;
+  margin-top: 1.5rem;
 }
