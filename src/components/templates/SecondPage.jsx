@@ -41,7 +41,7 @@ const SecondPage = () => {
               Store your growing investments in our non-custodial wallet that
               gives you access to a full suite of DeFi services in one place
             </p>
-            <a href="#">Download the App <FaArrowRight /></a>
+            <a href="#">Download the App <FaArrowRight  /></a>
           </div>
         </div>
       </div>
