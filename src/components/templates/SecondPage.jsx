@@ -45,9 +45,9 @@ const SecondPage = () => {
           </section>
         </div>
       </div>
-      <img src={star1} alt="star1" />
+      <img src={star1} alt="star1" className={styles.star1} />
 
-      <img src={star2} alt="star2" />
+      <img src={star2} alt="star2" className={styles.star2} />
     </div>
   );
 };
