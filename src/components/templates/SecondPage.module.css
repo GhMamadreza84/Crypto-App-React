@@ -31,3 +31,7 @@
 .title p{
   color: #898CA9!important;
 }
+.title a{
+  display: flex;
+  align-items: center; 
+}
