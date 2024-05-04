@@ -31,7 +31,6 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .img1{
   position: absolute;
@@ -54,4 +53,29 @@
   position: absolute;
   left: 13%;
   bottom: 80%;
+}
+.titles{
+  width: 35rem;
+  height: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.startBtn {
+  /* background: rgb(24, 200, 255);
+  background: linear-gradient(
+    197deg,
+    rgba(24, 200, 255, 1) 13%,
+    rgba(147, 63, 254, 1) 64%
+  ); */
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }

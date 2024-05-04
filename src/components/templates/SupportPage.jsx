@@ -19,12 +19,24 @@ const SupportPage = () => {
       </div>
       <div className={styles.section2}>
         <div className={styles.images}>
-          <img src={orangeGradient} alt="orangeGradient"  className={styles.img1}/>
-          <img src={sphereOrange} alt="sphereOrange" className={styles.img2}/>
-          <img src={userIcon} alt="userIcon" className={styles.img3}/>
-          <img src={star2} alt="star2" className={styles.img4}/>
+          <img
+            src={orangeGradient}
+            alt="orangeGradient"
+            className={styles.img1}
+          />
+          <img src={sphereOrange} alt="sphereOrange" className={styles.img2} />
+          <img src={userIcon} alt="userIcon" className={styles.img3} />
+          <img src={star2} alt="star2" className={styles.img4} />
         </div>
-        <div className={styles.title}></div>
+        <div className={styles.titles}>
+          <h2>24/7 access to full service customer support</h2>
+          <p>
+            We invest more resources than any other platform in making sure
+            great support from real people is a click away, whenever you need
+            it.
+          </p>
+          <button className={styles.startBtn}>Get Started</button>
+        </div>
       </div>
     </div>
   );
