@@ -29,6 +29,9 @@
   width: 100%;
   min-height: 99vh;
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .img1{
   position: absolute;
