@@ -61,6 +61,7 @@
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
+  margin-top: 10rem;
 }
 .startBtn {
   /* background: rgb(24, 200, 255);
