@@ -1,0 +1,22 @@
+.container {
+}
+.section1 {
+  width: 100%;
+  min-height: 99vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section1 h2{
+  width: 48rem;
+  font-size: 3.1rem;
+}
+.section1 p{
+  width: 36rem;
+  font-size: 1rem;
+  color: #898CA9;
+  margin-top: 2rem;
+}
