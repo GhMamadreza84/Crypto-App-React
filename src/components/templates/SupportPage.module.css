@@ -38,5 +38,12 @@
 .img2{
   position: absolute;
   left: 15%;
+  width: 10rem;
+  height: 10rem;
   bottom: 50%;
+}
+.img3{
+  position: absolute;
+  left: 19%;
+  bottom: 45%;
 }
