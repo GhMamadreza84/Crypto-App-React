@@ -63,6 +63,11 @@
   flex-direction: column;
   margin-top: 10rem;
 }
+.titles h2{
+  width: 36rem;
+  font-size: 3.1rem;
+}
+
 .startBtn {
   /* background: rgb(24, 200, 255);
   background: linear-gradient(
