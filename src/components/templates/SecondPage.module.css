@@ -44,6 +44,8 @@
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  color: #B982FF;
+
 }
 .star1{
   position: absolute;
@@ -54,4 +56,8 @@
   position: absolute;
   left: 130px;
   bottom: 5px;
+}
+.icon{
+  margin-left: 1rem;
+  color: #B982FF;
 }
