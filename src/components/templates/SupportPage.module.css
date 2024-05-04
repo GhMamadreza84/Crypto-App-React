@@ -30,8 +30,13 @@
   min-height: 99vh;
   position: relative;
 }
-.images:nth-child(1){
+.img1{
   position: absolute;
   left: 0;
+  bottom: 0;
+}
+.img2{
+  position: absolute;
+  left: 15%;
   bottom: 50%;
 }
