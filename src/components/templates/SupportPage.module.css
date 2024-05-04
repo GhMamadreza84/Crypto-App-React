@@ -1,4 +1,7 @@
 .container {
+  background-image: url(../../assets/bg-img1.png) ;
+  background-position: right 0 top 30%;
+  background-repeat: no-repeat;
 }
 .section1 {
   width: 100%;
@@ -20,4 +23,15 @@
   color: #898CA9;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+/* section2 */
+.section2{
+  width: 100%;
+  min-height: 99vh;
+  position: relative;
+}
+.images:nth-child(1){
+  position: absolute;
+  left: 0;
+  bottom: 50%;
 }
