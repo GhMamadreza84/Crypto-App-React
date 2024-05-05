@@ -5,7 +5,8 @@
   min-height: 800px;
   flex-direction: column;
   align-items: center;
-  
+  position: relative;
+
 }
 
 .table {
@@ -108,6 +109,10 @@
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
-  color: #B982FF;
-
+  color: #b982ff;
+}
+.blueGradient {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
