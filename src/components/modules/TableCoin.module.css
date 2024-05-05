@@ -6,7 +6,9 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
+  background-image: url("../../assets/bg-img2.png");
+  background-repeat: no-repeat;
+  
 }
 
 .table {
@@ -113,6 +115,7 @@
 }
 .blueGradient {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  right: -20%;
+  bottom: 33%;
 }
