@@ -7,8 +7,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-image: url("../../assets/bg-img2.png");
-  background-repeat: no-repeat;
+  
 }
 
 .table {
@@ -112,7 +111,4 @@
   align-items: center;
   margin-top: 1.5rem;
   color: #b982ff;
-}
-.blueGradient {
-  position: absolute;
 }
