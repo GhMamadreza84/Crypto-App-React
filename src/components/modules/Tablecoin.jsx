@@ -11,16 +11,16 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
         <RotatingLines strokeColor="#3874ff" strokeWidth="2" />
       ) : (
         <table className={styles.table}>
-          <thead>
-            {/* <tr>
+          {/* <thead>
+            <tr>
               <th>Coin</th>
               <th>Name</th>
               <th>Price</th>
               <th>24h</th>
               <th>Total Volume</th>
               <th></th>
-            </tr> */}
-          </thead>
+            </tr>
+          </thead> */}
           <tbody>
             {coins.map((coin) => (
               <TableRow

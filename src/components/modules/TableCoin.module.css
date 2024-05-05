@@ -14,7 +14,10 @@
   border-bottom: 2px solid #fff;
   margin-bottom: 20px;
 }
-
+.table tbody{
+  background: #1A1B23;
+  padding: 2rem 0rem 2rem 2rem;
+}
 .table th {
   font-size: 1.2rem;
   text-align: left;
