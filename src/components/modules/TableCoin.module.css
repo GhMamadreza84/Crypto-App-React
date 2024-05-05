@@ -62,6 +62,9 @@
 .error {
   color: #d33636;
 }
+.name{
+  color: #B982FF;
+}
 @media (max-width: 600px) {
   .table {
     display: block;
