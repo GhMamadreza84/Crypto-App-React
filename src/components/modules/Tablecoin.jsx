@@ -1,4 +1,5 @@
 import { RotatingLines } from "react-loader-spinner";
+import { FaArrowRight } from "react-icons/fa6";
 
 import { marketChart } from "../../services/cryptoApi";
 import chartUp from "../../assets/chart-up.svg";
@@ -12,13 +13,14 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
       ) : (
         <>
           <div className={styles.titles}>
-            <h2>24/7 access to full service customer support</h2>
+            <h2>Buy and sell with the lowest fees in the industry</h2>
             <p>
-              We invest more resources than any other platform in making sure
-              great support from real people is a click away, whenever you need
-              it.
+              Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using
+              bank transfers or your credit/debit card.
             </p>
-            <button className={styles.startBtn}>Get Started</button>
+            <a href="#">
+              Find an ATM <FaArrowRight className={styles.icon} />
+            </a>
           </div>
           <table className={styles.table}>
             {/* <thead>
