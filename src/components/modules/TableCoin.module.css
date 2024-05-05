@@ -71,12 +71,14 @@
   height: 22rem;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   margin-top: 9rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 .titles h2 {
-  width: 36rem;
+  width: 47rem;
   font-size: 3.1rem;
 }
 .titles p {
@@ -101,4 +103,11 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
+}
+.titles a {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: #B982FF;
+
 }

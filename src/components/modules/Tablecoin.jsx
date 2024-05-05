@@ -19,7 +19,7 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
               bank transfers or your credit/debit card.
             </p>
             <a href="#">
-              Find an ATM <FaArrowRight className={styles.icon} />
+              Learn More <FaArrowRight className={styles.icon} />
             </a>
           </div>
           <table className={styles.table}>
