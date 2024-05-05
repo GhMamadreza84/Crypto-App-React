@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { getCoinList } from "../../services/cryptoApi";
 
-import styles from "./ChartPage.module.css"
+import styles from "./ChartPage.module.css";
 import TableCoin from "../modules/TableCoin";
 import Pagination from "../modules/Pagination";
 import Search from "../modules/Search";
 import Chart from "../modules/Chart";
+import blueGradient from "../../assets/blueGradient.png";
+
 const HomePage = () => {
   const [coins, setCoins] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -30,9 +32,19 @@ const HomePage = () => {
   return (
     <div className={styles.container}>
       {/* <Search currency={currency} setCurrency={setCurrency} /> */}
-      <TableCoin coins={coins} isLoading={isLoading} currency={currency} setChart={setChart}/>
+      <TableCoin
+        coins={coins}
+        isLoading={isLoading}
+        currency={currency}
+        setChart={setChart}
+      />
       <Pagination page={page} setPage={setPage} />
       {!!chart && <Chart chart={chart} setChart={setChart} />}
+      <img
+        src={blueGradient}
+        alt="blueGradient"
+        className={styles.blueGradient}
+      />
     </div>
   );
 };

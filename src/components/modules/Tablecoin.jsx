@@ -5,15 +5,10 @@ import { marketChart } from "../../services/cryptoApi";
 import chartUp from "../../assets/chart-up.svg";
 import chartDown from "../../assets/chart-down.svg";
 import styles from "./TableCoin.module.css";
-import blueGradient from "../../assets/blueGradient.png";
 const TableCoin = ({ coins, isLoading, currency, setChart }) => {
   return (
     <div className={styles.container}>
-      <img
-        src={blueGradient}
-        alt="blueGradient"
-        className={styles.blueGradient}
-      />
+      
       {isLoading ? (
         <RotatingLines strokeColor="#3874ff" strokeWidth="2" />
       ) : (
