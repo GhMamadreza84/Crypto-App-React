@@ -10,8 +10,18 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
       {isLoading ? (
         <RotatingLines strokeColor="#3874ff" strokeWidth="2" />
       ) : (
-        <table className={styles.table}>
-          {/* <thead>
+        <>
+          <div className={styles.titles}>
+            <h2>24/7 access to full service customer support</h2>
+            <p>
+              We invest more resources than any other platform in making sure
+              great support from real people is a click away, whenever you need
+              it.
+            </p>
+            <button className={styles.startBtn}>Get Started</button>
+          </div>
+          <table className={styles.table}>
+            {/* <thead>
             <tr>
               <th>Coin</th>
               <th>Name</th>
@@ -21,17 +31,18 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
               <th></th>
             </tr>
           </thead> */}
-          <tbody>
-            {coins.map((coin) => (
-              <TableRow
-                coin={coin}
-                key={coin.id}
-                currency={currency}
-                setChart={setChart}
-              />
-            ))}
-          </tbody>
-        </table>
+            <tbody>
+              {coins.map((coin) => (
+                <TableRow
+                  coin={coin}
+                  key={coin.id}
+                  currency={currency}
+                  setChart={setChart}
+                />
+              ))}
+            </tbody>
+          </table>
+        </>
       )}
     </div>
   );
@@ -39,12 +50,8 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
 
 export default TableCoin;
 
-const TableRow = ({
-  coin,
-  currency,
-  setChart,
-}) => {
-  const  {
+const TableRow = ({ coin, currency, setChart }) => {
+  const {
     id,
     name,
     image,
@@ -53,15 +60,14 @@ const TableRow = ({
     total_volume,
     symbol,
   } = coin;
-  const showHandler = async() => {
-    
-    try{
-      const res = await fetch(marketChart(id))
-      const data = await res.json()
+  const showHandler = async () => {
+    try {
+      const res = await fetch(marketChart(id));
+      const data = await res.json();
       console.log(data);
-      setChart({...data,coin})
-    }catch(error){
-      setChart(null)
+      setChart({ ...data, coin });
+    } catch (error) {
+      setChart(null);
     }
   };
   return (
