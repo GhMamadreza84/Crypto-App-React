@@ -8,7 +8,6 @@ import styles from "./TableCoin.module.css";
 const TableCoin = ({ coins, isLoading, currency, setChart }) => {
   return (
     <div className={styles.container}>
-      
       {isLoading ? (
         <RotatingLines strokeColor="#3874ff" strokeWidth="2" />
       ) : (
@@ -23,8 +22,9 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
               Learn More <FaArrowRight className={styles.icon} />
             </a>
           </div>
-          <table className={styles.table}>
-            {/* <thead>
+          <div className={styles.tableDiv}>
+            <table className={styles.table}>
+              {/* <thead>
             <tr>
               <th>Coin</th>
               <th>Name</th>
@@ -34,17 +34,18 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
               <th></th>
             </tr>
           </thead> */}
-            <tbody>
-              {coins.map((coin) => (
-                <TableRow
-                  coin={coin}
-                  key={coin.id}
-                  currency={currency}
-                  setChart={setChart}
-                />
-              ))}
-            </tbody>
-          </table>
+              <tbody>
+                {coins.map((coin) => (
+                  <TableRow
+                    coin={coin}
+                    key={coin.id}
+                    currency={currency}
+                    setChart={setChart}
+                  />
+                ))}
+              </tbody>
+            </table>
+          </div>
         </>
       )}
     </div>

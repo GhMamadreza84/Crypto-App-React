@@ -7,16 +7,20 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+.tableDiv {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1A1B23;
+  padding: 2rem
   
 }
-
 .table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.table thead {
-  border-bottom: 2px solid #fff;
+.table tbody {
   margin-bottom: 20px;
 }
 .table th {
@@ -24,14 +28,15 @@
   text-align: left;
   padding: 10px 0px;
 }
-
 .table tbody tr {
   height: 80px;
   border-bottom: 1px solid #22262e;
   font-weight: 600;
   font-size: 1.1rem;
 }
-
+.table tbody tr td:nth-child(6){
+  width: 6rem;
+}
 .symbol {
   display: flex;
   align-items: center;
