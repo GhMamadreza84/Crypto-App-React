@@ -38,11 +38,7 @@
   width: 12rem;
 }
 .table tbody tr td:nth-child(6) {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 100%; */
+  width: 6rem;
 }
 .symbol {
   display: flex;
