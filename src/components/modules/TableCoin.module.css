@@ -12,7 +12,8 @@
   width: 100%;
   border-collapse: collapse;
   background-color: #1A1B23;
-  padding: 2rem
+  padding: 2rem;
+  border-radius: 25px;
   
 }
 .table {
