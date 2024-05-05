@@ -12,14 +12,14 @@ const TableCoin = ({ coins, isLoading, currency, setChart }) => {
       ) : (
         <table className={styles.table}>
           <thead>
-            <tr>
+            {/* <tr>
               <th>Coin</th>
               <th>Name</th>
               <th>Price</th>
               <th>24h</th>
               <th>Total Volume</th>
               <th></th>
-            </tr>
+            </tr> */}
           </thead>
           <tbody>
             {coins.map((coin) => (
