@@ -82,7 +82,7 @@ const TableRow = ({ coin, currency, setChart }) => {
           <span>{symbol.toUpperCase()}</span>
         </div>
       </td>
-      <td>{name}</td>
+      <td className={styles.name}>{name}</td>
       <td>
         {currency === "usd" ? "$" : null}
         {currency === "jpy" ? "¥" : null}
