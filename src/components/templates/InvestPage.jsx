@@ -3,6 +3,8 @@ import styles from "./InvestPage.module.css";
 
 import purpleGradient from "../../assets/purpleGradient2.png";
 import bagIcon from "../../assets/bag-icon.png";
+import star1 from "../../assets/star-img2.png";
+import star2 from "../../assets/star-img3.png";
 const InvestPage = () => {
   return (
     <div className={styles.container}>
@@ -16,10 +18,11 @@ const InvestPage = () => {
         <StartBtn />
       </div>
       <div className={styles.content}>
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={bagIcon} alt="bagIcon" />
       </div>
       <img src={purpleGradient} alt="purpleGradient" />
+      <img src={star1} alt="star1" />
+      <img src={star2} alt="star2" />
     </div>
   );
 };
