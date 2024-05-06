@@ -2,6 +2,7 @@ import StartBtn from "../modules/StartBtn";
 import styles from "./InvestPage.module.css";
 
 import purpleGradient from "../../assets/purpleGradient2.png";
+import bagIcon from "../../assets/bag-icon.png";
 const InvestPage = () => {
   return (
     <div className={styles.container}>
