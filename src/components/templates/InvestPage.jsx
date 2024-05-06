@@ -13,7 +13,9 @@ const InvestPage = () => {
         <StartBtn />
       </div>
       <div className={styles.content}>
-        
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </div>
     </div>
   );
