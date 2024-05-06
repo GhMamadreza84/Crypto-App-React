@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,4 +24,19 @@
   width: 36rem;
   font-size: 1rem;
   color: #898ca9;
+}
+.purpleGradient {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.star1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.star2 {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
