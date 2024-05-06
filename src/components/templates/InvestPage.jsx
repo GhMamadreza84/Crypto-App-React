@@ -1,7 +1,7 @@
 import StartBtn from "../modules/StartBtn";
 import styles from "./InvestPage.module.css";
 
-import purpleGradient from "../../assets/purpleGradient2.png"
+import purpleGradient from "../../assets/purpleGradient2.png";
 const InvestPage = () => {
   return (
     <div className={styles.container}>
@@ -15,10 +15,10 @@ const InvestPage = () => {
         <StartBtn />
       </div>
       <div className={styles.content}>
-        <img src={purpleGradient} alt="purpleGradient" />
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
+      <img src={purpleGradient} alt="purpleGradient" />
     </div>
   );
 };
