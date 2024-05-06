@@ -18,7 +18,7 @@ const InvestPage = () => {
         <StartBtn />
       </div>
       <div className={styles.content}>
-        <img src={bagIcon} alt="bagIcon" />
+        <img src={bagIcon} alt="bagIcon" className={styles.bagIcon}/>
       </div>
       <img src={purpleGradient} alt="purpleGradient"  className={styles.purpleGradient}/>
       <img src={star1} alt="star1" className={styles.star1}/>

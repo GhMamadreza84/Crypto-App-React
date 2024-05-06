@@ -29,6 +29,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  z-index: -1;
 }
 .star1 {
   position: absolute;
@@ -39,4 +40,7 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+.bagIcon{
+  z-index: 10;
 }
