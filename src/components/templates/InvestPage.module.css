@@ -33,14 +33,15 @@
 }
 .star1 {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 5%;
+  top: 56%;
 }
 .star2 {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8%;
+  top: 25%;
 }
 .bagIcon{
   /* z-index: 10; */
+  margin-right: 1rem;
 }
