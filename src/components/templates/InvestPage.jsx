@@ -1,4 +1,4 @@
-import styles from "./InvestPage.module.cs"
+import styles from "./InvestPage.module.css"
 const InvestPage = () => {
   return (
     <div>
