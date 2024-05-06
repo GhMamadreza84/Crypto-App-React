@@ -1,9 +1,15 @@
-import styles from "./InvestPage.module.css"
+import StartBtn from "../modules/StartBtn";
+import styles from "./InvestPage.module.css";
 const InvestPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
+      <div className={styles.title}>
+        <h2></h2>
+        <p></p>
+        <StartBtn />
+      </div>
     </div>
   );
-}
+};
 
 export default InvestPage;
