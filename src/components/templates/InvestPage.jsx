@@ -12,6 +12,9 @@ const InvestPage = () => {
         </p>
         <StartBtn />
       </div>
+      <div className={styles.content}>
+        
+      </div>
     </div>
   );
 };
