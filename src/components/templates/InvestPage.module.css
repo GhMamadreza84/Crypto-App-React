@@ -1,0 +1,20 @@
+.title {
+  width: 35rem;
+  height: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 9rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  width: 47rem;
+  font-size: 3.1rem;
+}
+.title p {
+  width: 36rem;
+  font-size: 1rem;
+  color: #898ca9;
+}
