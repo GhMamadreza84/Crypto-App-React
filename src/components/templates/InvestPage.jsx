@@ -20,9 +20,9 @@ const InvestPage = () => {
       <div className={styles.content}>
         <img src={bagIcon} alt="bagIcon" />
       </div>
-      <img src={purpleGradient} alt="purpleGradient" />
-      <img src={star1} alt="star1" />
-      <img src={star2} alt="star2" />
+      <img src={purpleGradient} alt="purpleGradient"  className={styles.purpleGradient}/>
+      <img src={star1} alt="star1" className={styles.star1}/>
+      <img src={star2} alt="star2" className={styles.star2}/>
     </div>
   );
 };
