@@ -1,5 +1,8 @@
 .container{
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 .title {
@@ -10,11 +13,11 @@
   align-items: start;
   flex-direction: column;
   margin-top: 9rem;
-  text-align: center;
+  text-align: start;
   margin-bottom: 4rem;
 }
 .title h2 {
-  width: 47rem;
+  width: 36rem;
   font-size: 3.1rem;
 }
 .title p {
