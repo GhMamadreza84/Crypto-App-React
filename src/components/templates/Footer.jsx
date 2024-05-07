@@ -8,7 +8,7 @@ const Footer = () => {
         <p>
           Unsubscribe at any time. <a href="#">Privacy policy ↗</a>
         </p>
-        <div>
+        <div className={styles.input}>
           <input type="email" placeholder="Email Address" />
           <FaArrowRight className={styles.icon} />
         </div>
