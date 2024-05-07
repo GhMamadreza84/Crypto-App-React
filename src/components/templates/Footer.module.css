@@ -1,4 +1,4 @@
-ul li{
+ul li {
   list-style: none;
 }
 .container {
@@ -53,12 +53,26 @@ ul li{
 
 .footerContent .centerDiv {
   max-width: 17.3rem;
+  height: 15rem;
 }
-
+.footerContent .centerDiv ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
 .footerContent .rightDiv {
   max-width: 17.3rem;
+  height: 15rem;
 }
-
+.footerContent .rightDiv ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
 .greenGradient {
   position: absolute;
   bottom: 0;
