@@ -26,3 +26,19 @@
   color: white;
 }
 
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerContent .leftDiv {
+  width: 23.7;
+}
+
+.footerContent .centerDiv {
+  width: 17.3;
+}
+
+.footerContent .rightDiv {
+  width: 17.3;
+}
