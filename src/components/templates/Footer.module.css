@@ -17,6 +17,11 @@
 }
 .feedBack a {
   color: white;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .input {
   display: flex;
@@ -34,4 +39,8 @@
 }
 .input input:focus {
   outline: 0;
+}
+.icon{
+  cursor: pointer;
+  color: #565976;
 }
