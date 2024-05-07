@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa6";
 import styles from "./Footer.module.css";
 const Footer = () => {
   return (
@@ -9,6 +10,7 @@ const Footer = () => {
         </p>
         <div>
           <input type="email" placeholder="Email Address" />
+          <FaArrowRight className={styles.icon} />
         </div>
       </div>
       <div className={styles.footerContent}></div>
