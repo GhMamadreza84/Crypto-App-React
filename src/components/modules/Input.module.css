@@ -1,3 +1,14 @@
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0b0b0f, #0b0b0f) padding-box,
+    linear-gradient(to right, #933ffe, #18c8ff) border-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+}
+
 .input input {
   background: linear-gradient(#0b0b0f, #0b0b0f) padding-box;
   color: #565976;
