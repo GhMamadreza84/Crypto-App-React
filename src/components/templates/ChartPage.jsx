@@ -4,7 +4,7 @@ import { getCoinList } from "../../services/cryptoApi";
 import styles from "./ChartPage.module.css";
 import TableCoin from "../modules/TableCoin";
 import Pagination from "../modules/Pagination";
-import Search from "../modules/Search";
+// import Search from "../modules/Search";
 import Chart from "../modules/Chart";
 import blueGradient from "../../assets/blueGradient.png";
 
