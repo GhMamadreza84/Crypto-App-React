@@ -21,6 +21,9 @@
 .input input {
   background: linear-gradient(#0B0B0F, #0B0B0F) padding-box,
     linear-gradient(to right, darkblue, darkorchid) border-box;
-  border-radius: 50em;
+  border-radius: 15px;
+  color: #565976;
   border: 4px solid transparent;
+  width: 4rem;
+  height: 1.5rem;
 }
