@@ -1,7 +1,9 @@
 .container {
   background-image: url("../../assets/circles3.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  object-fit: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +37,12 @@ min-height: 70vh;}
 
 .footerContent .leftDiv {
   max-width: 29rem;
-  min-height: 19.1;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
 }
 
 .footerContent .centerDiv {
