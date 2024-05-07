@@ -18,7 +18,7 @@
 .feedBack a {
   color: white;
 }
-.input{
+.input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,5 +29,9 @@
   border-radius: 15px;
   color: #565976;
   border: 1px solid transparent;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem 1rem 0.5rem;
+  text-align: lef;
+}
+.input input:focus {
+  outline: 0;
 }
