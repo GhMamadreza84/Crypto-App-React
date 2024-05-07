@@ -22,7 +22,7 @@ const Footer = () => {
             Sign up to get the latest in CoinFlip news, discounts, and more.
           </p>
           <Input />
-          <p>© 2024 Created With 💙 By Gh_Mamadreza</p>
+          <p>© 2024 Created With 💜 By Gh_Mamadreza</p>
         </div>
         <div className={styles.centerDiv}>
           <ul>
