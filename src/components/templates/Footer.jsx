@@ -18,8 +18,8 @@ const Footer = () => {
           <Input />
           <p>© 2024 Created With 💙 By Gh_Mamadreza</p>
         </div>
-        <div></div>
-        <div></div>
+        <div  className={styles.centerDiv}></div>
+        <div className={styles.rightDiv}></div>
       </div>
     </div>
   );
