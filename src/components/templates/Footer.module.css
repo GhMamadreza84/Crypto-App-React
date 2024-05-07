@@ -19,9 +19,8 @@
   color: white;
 }
 .input input {
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#0B0B0F, #0B0B0F) padding-box,
     linear-gradient(to right, darkblue, darkorchid) border-box;
-    
   border-radius: 50em;
   border: 4px solid transparent;
 }
