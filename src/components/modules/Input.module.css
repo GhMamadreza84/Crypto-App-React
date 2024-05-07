@@ -1,0 +1,17 @@
+.input input {
+  background: linear-gradient(#0b0b0f, #0b0b0f) padding-box;
+  color: #565976;
+  border-radius: 10px;
+
+  padding: 1rem 4rem 1rem 0.5rem;
+  border: none;
+  text-align: lef;
+}
+.input input:focus {
+  outline: 0;
+}
+.icon {
+  cursor: pointer;
+  color: #565976;
+  margin-right: 0.7rem;
+}

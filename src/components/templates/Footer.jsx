@@ -8,12 +8,13 @@ const Footer = () => {
         <p>
           Unsubscribe at any time. <a href="#">Privacy policy ↗</a>
         </p>
-        <div className={styles.input}>
-          <input type="email" placeholder="Email Address" />
-          <FaArrowRight className={styles.icon} />
-        </div>
+        
       </div>
-      <div className={styles.footerContent}></div>
+      <div className={styles.footerContent}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
