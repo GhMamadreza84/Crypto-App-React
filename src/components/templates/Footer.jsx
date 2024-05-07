@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa6";
 import styles from "./Footer.module.css";
+import Input from "../modules/Input";
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -8,7 +9,7 @@ const Footer = () => {
         <p>
           Unsubscribe at any time. <a href="#">Privacy policy ↗</a>
         </p>
-        
+        <Input />
       </div>
       <div className={styles.footerContent}>
         <div></div>
