@@ -1,4 +1,6 @@
-import styles from "./Input.module.css"
+import styles from "./Input.module.css";
+import { FaArrowRight } from "react-icons/fa6";
+
 const Input = () => {
   return (
     <div className={styles.input}>

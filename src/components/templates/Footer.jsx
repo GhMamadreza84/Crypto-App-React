@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa6";
 import styles from "./Footer.module.css";
 import Input from "../modules/Input";
 const Footer = () => {
