@@ -11,6 +11,7 @@ const Footer = () => {
         </p>
         <Input />
       </div>
+      <hr />
       <div className={styles.footerContent}>
         <div className={styles.leftDiv}>
           <h1>COINFLIP</h1>
