@@ -4,9 +4,14 @@
   justify-content: center;
   align-items: center;
 }
-/* .feedBack{
+.feedBack{
 
-} */
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .feedBack h1 {
   font-size: 3.1rem;
   text-align: center;
@@ -17,11 +22,6 @@
 }
 .feedBack a {
   color: white;
-  height: 12rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 .input {
   display: flex;
