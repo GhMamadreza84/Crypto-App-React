@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .feedBack {
   height: 12rem;
@@ -33,7 +34,9 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-min-height: 70vh;}
+  min-height: 70vh;
+  z-index: 10;
+}
 
 .footerContent .leftDiv {
   max-width: 29rem;
@@ -51,4 +54,9 @@ min-height: 70vh;}
 
 .footerContent .rightDiv {
   max-width: 17.3rem;
+}
+.greenGradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
