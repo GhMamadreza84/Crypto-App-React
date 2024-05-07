@@ -18,11 +18,16 @@
 .feedBack a {
   color: white;
 }
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .input input {
-  background: linear-gradient(#0B0B0F, #0B0B0F) padding-box,
+  background: linear-gradient(#0b0b0f, #0b0b0f) padding-box,
     linear-gradient(to right, darkblue, darkorchid) border-box;
   border-radius: 15px;
   color: #565976;
-  border: 4px solid transparent;
-  padding:1.5rem 4rem;
+  border: 1px solid transparent;
+  padding: 1rem 3rem;
 }
