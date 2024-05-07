@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import Input from "../modules/Input";
+import greenGradient from "../../assets/green-gradient2.png"
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -69,6 +70,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <img src={greenGradient} alt="greenGradient" className={styles.greenGradient}/>
     </div>
   );
 };
