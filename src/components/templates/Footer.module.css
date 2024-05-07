@@ -1,3 +1,6 @@
+ul li{
+  list-style: none;
+}
 .container {
   background-image: url("../../assets/circles3.png");
   background-repeat: no-repeat;
@@ -55,6 +58,7 @@
 .footerContent .rightDiv {
   max-width: 17.3rem;
 }
+
 .greenGradient {
   position: absolute;
   bottom: 0;
