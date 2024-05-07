@@ -46,7 +46,28 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.rightDiv}></div>
+        <div className={styles.rightDiv}>
+        <ul>
+            <li>
+              <h1>Privacy Policy and Terms of Service</h1>
+            </li>
+            <li>
+              <p>CoinFlip Privacy Policy</p>
+            </li>
+            <li>
+              <p>CoinFlip Biometrics Privacy Policy</p>
+            </li>
+            <li>
+              <p>CoinFlip Financial Privacy Notice</p>
+            </li>
+            <li>
+              <p>CoinFlip Terms of Service</p>
+            </li>
+            <li>
+              <p>CoinFlip Trade Desk Terms of Service</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
