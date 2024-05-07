@@ -29,16 +29,19 @@
 .footerContent {
   display: flex;
   justify-content: space-around;
-}
+  align-items: center;
+  width: 100%;
+min-height: 70vh;}
 
 .footerContent .leftDiv {
-  width: 23.7;
+  max-width: 29rem;
+  min-height: 19.1;
 }
 
 .footerContent .centerDiv {
-  width: 17.3;
+  max-width: 17.3rem;
 }
 
 .footerContent .rightDiv {
-  width: 17.3;
+  max-width: 17.3rem;
 }

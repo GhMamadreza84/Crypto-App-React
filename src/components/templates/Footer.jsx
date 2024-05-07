@@ -27,7 +27,7 @@ const Footer = () => {
         <div className={styles.centerDiv}>
           <ul>
             <li>
-              <h1>Company</h1>
+              <h5>Company</h5>
             </li>
             <li>
               <p>About</p>
@@ -49,7 +49,7 @@ const Footer = () => {
         <div className={styles.rightDiv}>
         <ul>
             <li>
-              <h1>Privacy Policy and Terms of Service</h1>
+              <h5>Privacy Policy and Terms of Service</h5>
             </li>
             <li>
               <p>CoinFlip Privacy Policy</p>
