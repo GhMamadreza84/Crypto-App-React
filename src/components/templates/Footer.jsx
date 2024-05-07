@@ -13,8 +13,8 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.leftDiv}>
           <h1>COINFLIP</h1>
-          <p>CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer. </p>
-          <p>Sign up to get the latest in CoinFlip news, discounts, and more.</p>
+          <p>CoinFlip, the world's leading bitcoin ATM operator, makes it so flippin' easy to buy and sell bitcoin via cash, card, or bank transfer. </p>
+          <p>Sign up to get the latest in CoinFlip news, discounts, and more.</p>
           <Input />
           <p>© 2024 Created With 💙 By Gh_Mamadreza</p>
         </div>
