@@ -7,14 +7,21 @@
 /* .feedBack{
 
 } */
-.feedBack h1{
+.feedBack h1 {
   font-size: 3.1rem;
   text-align: center;
 }
-.feedBack p{
+.feedBack p {
   text-align: center;
-  color: #898CA9;
+  color: #898ca9;
 }
-.feedBack a{
+.feedBack a {
   color: white;
+}
+.input input {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+    
+  border-radius: 50em;
+  border: 4px solid transparent;
 }
