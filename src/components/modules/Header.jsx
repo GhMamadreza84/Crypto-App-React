@@ -23,7 +23,9 @@ const Header = () => {
       <div className={styles.openBurger}></div>
 
       <div className={styles.burgerMenu}>
-        <div className={styles.closeBurger}>*</div>
+        <div className={styles.closeBurger}>
+          <IoMdClose />
+        </div>
 
         <div className={styles.menu}>
           <ul className={styles.list}>
