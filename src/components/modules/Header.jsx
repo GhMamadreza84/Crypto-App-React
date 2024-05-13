@@ -24,7 +24,7 @@ const Header = () => {
 
       <div className={styles.burgerMenu}>
         <div className={styles.closeBurger}>
-          <IoMdClose />
+          <IoMdClose className={styles.closeBurgerBtn} />
         </div>
 
         <div className={styles.menu}>
