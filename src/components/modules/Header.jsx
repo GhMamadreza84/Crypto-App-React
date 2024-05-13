@@ -18,9 +18,9 @@ const Header = () => {
         <button className={styles.login}>Sign in</button>
         <button className={styles.signup}>Sign up</button>
       </div> */}
-      <header className="header">
-        <div className="logo">Your Logo</div>
-        <div className="nav">
+      <header className={styles.header}>
+        <div className={styles.logo}>Your Logo</div>
+        <div className={styles.nav}>
           <ul>
             <li>Buy/Sell</li>
             <li>Grow</li>

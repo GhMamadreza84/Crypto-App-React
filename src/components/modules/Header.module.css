@@ -49,3 +49,27 @@
   cursor: pointer;
 
 } */
+.header {
+  display: grid;
+  grid-template-areas: 'logo nav';
+  /* Other styles for the header */
+}
+
+.logo {
+  grid-area: logo;
+  /* Styles for your logo */
+}
+
+.nav {
+  grid-area: nav;
+  /* Styles for your navigation links */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .header {
+    grid-template-areas: 'logo burger' 'nav nav';
+  }
+
+  .burger {
+    /* 
