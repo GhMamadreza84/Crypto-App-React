@@ -65,7 +65,14 @@
 
 }
 .burgerMenu .menu {
-  
+  height: 65vh;
+}
+.burgerMenu .menu .list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 @media screen and (max-width: 1024px) {
   .menu{
