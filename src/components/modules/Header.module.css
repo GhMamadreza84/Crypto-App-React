@@ -74,6 +74,11 @@
   align-items: center;
   height: 100%;
 }
+.burgerMenu .closeBurger{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
 .burgerMenu .closeBurger svg{
   font-size: 2rem;
 }
