@@ -61,6 +61,12 @@
   justify-content: start;
   align-items: center;
 }
+.burgerMenu .buttons{
+
+}
+.burgerMenu .menu {
+  
+}
 @media screen and (max-width: 1024px) {
   .menu{
     display: none;
