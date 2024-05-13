@@ -14,7 +14,7 @@ import star1 from "../../assets/star-img.png"
 import star2 from "../../assets/star-img2.png"
 import star3 from "../../assets/star-img3.png"
 import sphereOrange from "../../assets/sphereOrange.png"
-import sphereGray from "../../assets/sphereGray.png"
+// import sphereGray from "../../assets/sphereGray.png"
 import spherePurple from "../../assets/spherePurple.png"
 const HomePage = () => {
   return (
@@ -32,7 +32,7 @@ const HomePage = () => {
       <img src={star2} alt="" className={styles.star2} />
       <img src={star3} alt="" className={styles.star3} />
       <img src={sphereOrange} alt="" className={styles.sphereOrange} />
-      <img src={sphereGray} alt="" className={styles.sphereGray} />
+      {/* <img src={sphereGray} alt="" className={styles.sphereGray} /> */}
       <img src={spherePurple} alt="" className={styles.spherePurple} />
     </div>
   );
