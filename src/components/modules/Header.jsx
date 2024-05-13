@@ -19,11 +19,17 @@ const Header = () => {
         <button className={styles.signup}>Sign up</button>
       </div> */}
       <header className="header">
-      <div className="logo">Your Logo</div>
-      <div className="nav">
-        {/* Your navigation links */}
-      </div>
-    </header>
+        <div className="logo">Your Logo</div>
+        <div className="nav">
+          <ul>
+            <li>Buy/Sell</li>
+            <li>Grow</li>
+            <li>Market</li>
+            <li>Business</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </header>
     </div>
   );
 };
