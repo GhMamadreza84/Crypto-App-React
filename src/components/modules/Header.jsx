@@ -1,3 +1,4 @@
+import { IoMdClose } from "react-icons/io";
 import styles from "./Header.module.css";
 const Header = () => {
   return (
