@@ -2,7 +2,7 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.logo}>
+      <div className={styles.logo}>
         <h3>COINFLIP</h3>
       </div>
       <div className={styles.menu}>
@@ -17,19 +17,7 @@ const Header = () => {
       <div className={styles.buttons}>
         <button className={styles.login}>Sign in</button>
         <button className={styles.signup}>Sign up</button>
-      </div> */}
-      <header className={styles.header}>
-        <div className={styles.logo}>Your Logo</div>
-        <div className={styles.nav}>
-          <ul>
-            <li>Buy/Sell</li>
-            <li>Grow</li>
-            <li>Market</li>
-            <li>Business</li>
-            <li>Support</li>
-          </ul>
-        </div>
-      </header>
+      </div>
     </div>
   );
 };
