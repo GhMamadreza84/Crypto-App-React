@@ -49,7 +49,13 @@
   cursor: pointer;
 
 }
-
+.burgerBtn {
+  background-color: #0B0B0F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 1024px) {
   .menu{
     display: none;
