@@ -18,7 +18,12 @@ const Header = () => {
         <button className={styles.login}>Sign in</button>
         <button className={styles.signup}>Sign up</button>
       </div> */}
-      
+      <header className="header">
+      <div className="logo">Your Logo</div>
+      <div className="nav">
+        {/* Your navigation links */}
+      </div>
+    </header>
     </div>
   );
 };
