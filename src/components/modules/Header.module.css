@@ -58,8 +58,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-backdrop-filter: blur(8px);
-border-radius: 50px;
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
 }
 .burgerMenu .buttons {
   margin: 3rem 0rem;
