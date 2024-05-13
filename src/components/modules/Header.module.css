@@ -42,15 +42,14 @@
   );
   width: 6rem;
   height: 2.5rem;
-  border:none;
+  border: none;
   color: white;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-
 }
 .burgerMenu {
- height: 100vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
@@ -59,14 +58,16 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+backdrop-filter: blur(8px);
+border-radius: 50px;
 }
-.burgerMenu .buttons{
+.burgerMenu .buttons {
   margin: 3rem 0rem;
 }
 .burgerMenu .menu {
   height: 65vh;
 }
-.burgerMenu .menu .list{
+.burgerMenu .menu .list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,7 +75,7 @@
   height: 100%;
 }
 @media screen and (max-width: 1024px) {
-  .menu{
+  .menu {
     display: none;
   }
 }
