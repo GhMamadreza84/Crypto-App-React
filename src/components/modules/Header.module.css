@@ -62,7 +62,7 @@
   align-items: center;
 }
 .burgerMenu .buttons{
-
+  margin: 3rem 0rem;
 }
 .burgerMenu .menu {
   height: 65vh;
