@@ -19,10 +19,10 @@ const Header = () => {
         <button className={styles.signup}>Sign up</button>
       </div>
 
-      <div className={styles.burgerBtn}></div>
+      <div className={styles.openBurger}></div>
 
       <div className={styles.burgerMenu}>
-        <div className={styles.burgerBtn}>*</div>
+        <div className={styles.closeBurger}>*</div>
 
         <div className={styles.menu}>
           <ul className={styles.list}>
