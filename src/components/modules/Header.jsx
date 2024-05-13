@@ -22,6 +22,8 @@ const Header = () => {
       <div className={styles.burgerBtn}></div>
 
       <div className={styles.burgerMenu}>
+        <div className={styles.burgerBtn}>*</div>
+
         <div className={styles.menu}>
           <ul className={styles.list}>
             <li>Buy/Sell</li>

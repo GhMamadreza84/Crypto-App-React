@@ -56,16 +56,16 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(8px);
   border-radius: 50px;
 }
 .burgerMenu .buttons {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
 }
 .burgerMenu .menu {
-  height: 65vh;
+  height: 40vh;
 }
 .burgerMenu .menu .list {
   display: flex;
