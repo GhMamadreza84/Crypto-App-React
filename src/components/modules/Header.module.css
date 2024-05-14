@@ -106,11 +106,8 @@
 .none {
   display: none;
 }
-.right{
-  right: 0!important;
-}
-.inline{
-  display: inline;
+.flex{
+  display: flex;
 }
 @media screen and (max-width: 1024px) {
   .menu {

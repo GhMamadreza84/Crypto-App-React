@@ -32,16 +32,12 @@ const Header = () => {
         <IoMenu />
       </div>
 
-      <div
-        className={
-          (styles.burgerMenu, burgerOpen ? styles.inline : styles.none)
-        }
-      >
+      <div className={styles.burgerMenu}>
         <div className={styles.closeBurger}>
           <IoMdClose className={styles.closeBurgerBtn} />
         </div>
 
-        <div className={(styles.menu)}>
+        <div className={styles.menu}>
           <ul className={styles.list}>
             <li>Buy/Sell</li>
             <li>Grow</li>
