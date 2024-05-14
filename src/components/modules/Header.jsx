@@ -26,7 +26,7 @@ const Header = () => {
       </div>
 
       <div className={styles.openBurger }>
-      <CiMenuFries />
+      <IoMenu />
       </div>
 
       <div className={styles.burgerMenu}>
