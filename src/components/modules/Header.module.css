@@ -65,7 +65,8 @@
   margin: 2rem 0rem;
 }
 .burgerMenu .menu {
-  height: 20rem;}
+  height: 20rem;
+}
 .burgerMenu .menu .list {
   display: flex;
   flex-direction: column;
@@ -93,6 +94,7 @@
 .burgerMenu .closeBurger svg {
   font-size: 2rem;
   cursor: pointer;
+  margin: 1rem 0rem 0rem 1rem;
 }
 @media screen and (max-width: 1024px) {
   .menu {
