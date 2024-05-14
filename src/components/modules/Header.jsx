@@ -5,9 +5,9 @@ import { IoMenu } from "react-icons/io5";
 
 import styles from "./Header.module.css";
 const Header = () => {
-  const [burgerMenu, setBurgerMenu] = useState(false);
+  const [burgerOpen, setBurgerOpen] = useState(false);
   const menuHandler = () => {
-    setBurgerMenu(!burgerMenu);
+    setBurgerOpen(!burgerOpen);
   };
   return (
     <div className={styles.container}>
@@ -32,7 +32,7 @@ const Header = () => {
         <IoMenu />
       </div>
 
-      <div className={`${styles.burgerMenu},${styles.right}`}>
+      <div className={styles.burgerMenu}>
         <div className={styles.closeBurger}>
           <IoMdClose className={styles.closeBurgerBtn} />
         </div>
