@@ -96,6 +96,9 @@
   cursor: pointer;
   margin: 1rem 0rem 0rem 1rem;
 }
+.openBurger svg{
+  font-size: 2rem;
+}
 .none {
   display: none;
 }

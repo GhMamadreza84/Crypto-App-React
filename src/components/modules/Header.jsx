@@ -25,7 +25,9 @@ const Header = () => {
         <button className={styles.signup}>Sign up</button>
       </div>
 
-      <div className={burgerMenu ? styles.openBurger : styles.none}></div>
+      <div className={burgerMenu ? styles.openBurger : styles.none}>
+      <CiMenuFries />
+      </div>
 
       <div className={styles.burgerMenu}>
         <div className={styles.closeBurger}>
