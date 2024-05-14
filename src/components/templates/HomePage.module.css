@@ -24,7 +24,6 @@
   top: 15rem;
   width: 3rem;
   height: 3rem;
-  animation: example 2s infinite;
 }
 .star11{
   position: absolute;
@@ -37,6 +36,7 @@
   position: absolute;
   left: 6rem;
   top: 24.5rem;
+  z-index: 0;
 }
 .LiteCoin {
   position: absolute;
@@ -82,25 +82,3 @@
   right: 17rem;
   bottom: 1.5rem;
 }
-/* @keyframes example {
-  0% {
-    left: 13.5rem;
-  top: 15rem;
-  }
-  25%{
-    left: 12.5rem;
-  top: 17rem;
-  }
-  50%{
-    left: 11.5rem;
-  top: 16rem;
-  }
-  75%{
-    left: 10.5rem;
-  top: 15.5rem;
-  }
-  100% {
-    left: 13.5rem;
-  top: 15rem;
-   }
-} */

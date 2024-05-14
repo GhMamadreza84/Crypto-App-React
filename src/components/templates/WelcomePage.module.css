@@ -1,7 +1,7 @@
-.container{
+.container {
   min-height: 44rem;
 }
-.title{
+.title {
   min-height: 30rem;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,14 @@
   align-items: center;
   text-align: center;
 }
-.title h1{
+.title h1 {
   font-size: 5.3rem;
   margin-top: 8rem;
-
+  z-index: 10;
 }
-.title p{
+.title p {
   margin-top: 2rem;
-  color: #898CA9 ;
+  color: #898ca9;
   margin-bottom: 8rem;
+  z-index: 10;
 }
