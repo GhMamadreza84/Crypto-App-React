@@ -8,7 +8,6 @@ const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const menuHandler = () => {
     setBurgerMenu(!burgerMenu);
-    console.log(burgerMenu);
   };
   return (
     <div className={styles.container}>
