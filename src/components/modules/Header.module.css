@@ -84,7 +84,7 @@
 }
 .burgerMenu .menu .list li:hover {
   backdrop-filter: blur(15px);
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .burgerMenu .closeBurger {
   width: 100%;
