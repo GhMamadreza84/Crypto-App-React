@@ -106,6 +106,9 @@
 .none {
   display: none;
 }
+.right {
+  right: 0 !important;
+}
 @media screen and (max-width: 1024px) {
   .menu {
     display: none;

@@ -32,7 +32,7 @@ const Header = () => {
         <IoMenu />
       </div>
 
-      <div className={styles.burgerMenu}>
+      <div className={`${styles.burgerMenu},${styles.right}`}>
         <div className={styles.closeBurger}>
           <IoMdClose className={styles.closeBurgerBtn} />
         </div>
