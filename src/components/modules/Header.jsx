@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { IoMdClose } from "react-icons/io";
-import { CiMenuFries } from "react-icons/ci";
+import { IoMenu } from "react-icons/io5";
 
 import styles from "./Header.module.css";
 const Header = () => {
