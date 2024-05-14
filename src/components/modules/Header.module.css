@@ -96,7 +96,11 @@
   cursor: pointer;
   margin: 1rem 0rem 0rem 1rem;
 }
-.openBurger svg{
+.openBurger {
+  display: none;
+  cursor: pointer;
+}
+.openBurger svg {
   font-size: 2rem;
 }
 .none {
@@ -105,5 +109,11 @@
 @media screen and (max-width: 1024px) {
   .menu {
     display: none;
+  }
+  .buttons {
+    display: none;
+  }
+  .openBurger {
+    display: block;
   }
 }
