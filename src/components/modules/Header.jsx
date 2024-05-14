@@ -1,9 +1,11 @@
 import { useState } from "react";
+
 import { IoMdClose } from "react-icons/io";
+import { CiMenuFries } from "react-icons/ci";
 
 import styles from "./Header.module.css";
 const Header = () => {
-  const [burgerMenu, setBurgerMenu] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(true);
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
