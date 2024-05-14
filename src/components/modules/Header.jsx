@@ -37,7 +37,7 @@ const Header = () => {
           <IoMdClose className={styles.closeBurgerBtn} />
         </div>
 
-        <div className={styles.menu}>
+        <div className={styles.menuList}>
           <ul className={styles.list}>
             <li>Buy/Sell</li>
             <li>Grow</li>
@@ -46,7 +46,7 @@ const Header = () => {
             <li>Support</li>
           </ul>
         </div>
-        <div className={styles.buttons}>
+        <div className={styles.burgerButtons}>
           <button className={styles.login}>Sign in</button>
           <button className={styles.signup}>Sign up</button>
         </div>

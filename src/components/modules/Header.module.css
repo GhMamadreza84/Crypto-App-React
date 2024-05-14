@@ -52,29 +52,30 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -50%;
+  right: 0;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   backdrop-filter: blur(8px);
   border-radius: 50px;
 }
-.burgerMenu .buttons {
+.burgerMenu .burgerButtons {
   margin: 2rem 0rem;
 }
-.burgerMenu .menu {
+.burgerMenu .menuList {
   height: 20rem;
+  width: 23rem;
 }
-.burgerMenu .menu .list {
+.burgerMenu .menuList .list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-.burgerMenu .menu .list li {
+.burgerMenu .menuList .list li {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -82,7 +83,7 @@
   align-items: center;
   transition: all ease-in-out 0.3s;
 }
-.burgerMenu .menu .list li:hover {
+.burgerMenu .menuList .list li:hover {
   backdrop-filter: blur(15px);
   transform: scale(1.3);
 }
@@ -106,7 +107,7 @@
 .none {
   display: none;
 }
-.flex{
+.flex {
   display: flex;
 }
 @media screen and (max-width: 1024px) {
